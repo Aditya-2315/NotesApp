@@ -7,7 +7,6 @@ import { CiEdit } from "react-icons/ci";
 import { GrView } from "react-icons/gr";
 import { MdOutlineDeleteOutline } from "react-icons/md";
 import { IoCopyOutline } from "react-icons/io5";
-import { IoShareSocialOutline } from "react-icons/io5";
 import { CiCalendar } from "react-icons/ci";
 
 
@@ -70,14 +69,6 @@ const Notes = () => {
                       toast.success("Copied to Clipboard!!")
                     }}>
                       <IoCopyOutline className='hover:font-extrabold' />
-                    </button>
-                    <button className='py-2 px-1.5 border rounded-md cursor-pointer hover:bg-black hover:text-white hover:font-extrabold'
-                    onClick={() => {
-                      navigator.clipboard.writeText(`${window.location.href}/${note?.Id}`)
-                      toast.success("Link Copied to Clipboard!!")}}
-                    
-                    >
-                      <IoShareSocialOutline />
                     </button>
                   </div>
                   <div className='flex items-center gap-1.5 self-center'>
